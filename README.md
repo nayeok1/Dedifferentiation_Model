@@ -33,7 +33,8 @@ To analyze the system easier, we have assumed self-renewal probability p = 1, st
 ![i.case1.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfMjE4/MDAxNTQ0MDAxOTcxMzMx.ozDmP2SEF2s8MjMlhjo-ISaB3ta_D68T7h_bMijqJzog.alU1Qoy5X8iCJZv1u8nFsnuGtf7tjTnSOMppTPp3uEog.JPEG.nayeonkim93/i.case1.SSA.jpeg)
 
       Parameter assumption: p = 1, v0 = 1, v1 =0.2, d0 = 0, d1 = 0.4, 𝛾 = 1, r1 = 1    
-      Steady state is unstable. Both numerical solution and stochastic solution verified.
+      Steady state is unstable. Both numerical solution and stochastic solution verified.   
+      Blue label = stem cell, Red label = differentiated cell
 
 ##### _Case 2: d1 > v1 + r1 with steady state:(0.67,1.67)_
 
@@ -42,6 +43,7 @@ To analyze the system easier, we have assumed self-renewal probability p = 1, st
 
       Parameter assumption: p = 1, v0 = 1, v1 =0.2, d0 = 0, d1 = 0.6, 𝛾 = 1, r1 = 0.1    
       Steady state is stable. Both numerical solution and stochastic solution verified.
+      Blue label = stem cell, Red label = differentiated cell
 
 #### System with feedback d0 ≠ 0 and r1 = 0
 
@@ -50,16 +52,26 @@ To analyze the system easier, we have assumed self-renewal probability p = 1, st
 ![ii.case1.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfMTk5/MDAxNTQ0MDAzMzU3ODI3.36psw1Wlf2ICIIwUB-nlyZ9LFXWhSPVMP2BPQ1Vys8Ug.dC4qyQOuK_NJ5ej420WC69IIAtUejKU426SElRr66akg.JPEG.nayeonkim93/ii.case1.SSA.jpeg)
 
       Parameter assumption: p = 1, v0 = 1, v1 =0.1, d0 = 0.1, d1 = 1, 𝛾 = 1, r1 = 0    
-      Steady state is stable. Both numerical solution and stochastic solution verified.
+      Steady state is stable. Both numerical solution and stochastic solution verified.   
+      Blue label = stem cell, Red label = differentiated cell
       
 ##### _Case 2: |(1-d0)(v1-d1)| > 8(1+d0)_
 ![ii.case2.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMzMg/MDAxNTQ0MDA1MjgzMDU1.erRwSEUFJFPD3JBb4DsA4em_6vZhNdb_FED1LBBJo00g.h9ln6xYgkl78G2XFzJF5fEfp7V61R_qNekGP0L_j6gAg.JPEG.nayeonkim93/ii.case2.ODE.jpeg)
 ![ii.case2.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfNjQg/MDAxNTQ0MDA1Mjg3ODU0.uydAxRS-M6yj1w3AvpXuwLdyIMvEUJWOYtey0X_Qorog.fbeGqyvVhohGNGrHuoTA_imKMN4lHt_VnZQaWkI2UCIg.JPEG.nayeonkim93/ii.case2.SSA.jpeg)
 
       Parameter assumption: p = 1, v0 = 1, v1 =0.1, d0 = 0.1, d1 = 11, 𝛾 = 1, r1 = 0    
-      Steady state is stable. Both numerical solution and stochastic solution verified.
+      Steady state is stable. Both numerical solution and stochastic solution verified.   
+      Blue label = stem cell, Red label = differentiated cell
 
 #### System with feedback d0 ≠ 0 and r1 ≠ 0
 
-By using linear stability analysis, we have achieved two steady states. For non-trivial steady state to be positive, we have 
+By using linear stability analysis, we have achieved two steady states. For non-trivial steady state to be positive, we have four cases, but case 2 and case 4 fails because of contradiction of inequality. 
+
 ![inequality](https://postfiles.pstatic.net/MjAxODEyMDVfMTcx/MDAxNTQ0MDA4NDA4Mzcz.rq11L6PrfVk--9gM6sNvEhJJ6FQlpFXYaqlOBxFxjFQg.nmw958q7dufct9zFCk0LPiJhGuGdb2fnMxPQyGrIAYcg.PNG.nayeonkim93/Screen_Shot_2018-12-05_at_3.07.04_AM.png?type=w773)
+
+Therefore, we are going to observe numerical solution and stochastic solution only for the case 1 and case 3. 
+
+##### _Case 1_
+![iii.case1.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMTI2/MDAxNTQ0MDA4MzQ4NTcx.vhbIvWW1-0TMW9yJ7QgpeuVZDQ7t019S28ewSx2VvFMg.2p2LgWZ-SQmxASShaHWzuqaieZZ5k4HgtRNd4452N0sg.JPEG.nayeonkim93/iii.case1.ODE.jpeg)
+##### _Case 3_
+![iii.cased.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfMjcx/MDAxNTQ0MDA4MzUzODUx.DbogCy9c4KGxvA-SeI8qeUDRBjR5oye__cT0kFVx_IEg.c4EqLrAWfSNbunyFO_vUoGeWQX_dEg_RbJ-aeupc5ssg.JPEG.nayeonkim93/iii.case1.SSA.jpeg)
