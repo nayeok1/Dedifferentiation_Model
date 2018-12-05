@@ -75,6 +75,9 @@ Therefore, we are going to observe numerical solution and stochastic solution on
 ![iii.case1.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMTI2/MDAxNTQ0MDA4MzQ4NTcx.vhbIvWW1-0TMW9yJ7QgpeuVZDQ7t019S28ewSx2VvFMg.2p2LgWZ-SQmxASShaHWzuqaieZZ5k4HgtRNd4452N0sg.JPEG.nayeonkim93/iii.case1.ODE.jpeg)
 ![iii.case1.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfMjcx/MDAxNTQ0MDA4MzUzODUx.DbogCy9c4KGxvA-SeI8qeUDRBjR5oye__cT0kFVx_IEg.c4EqLrAWfSNbunyFO_vUoGeWQX_dEg_RbJ-aeupc5ssg.JPEG.nayeonkim93/iii.case1.SSA.jpeg)
 
+      Parameter assumption: p = 1, v0 = 1, v1 =0.5, d0 = 0.1, d1 = 1, 𝛾 = 1, r1 = 0.2    
+      Steady state is stable. Both numerical solution and stochastic solution verified.   
+      Blue label = stem cell, Red label = differentiated cell
 ##### _Case 3_
 ![iii.case3.ODE]()
 ![iii.case3.SSA]()
