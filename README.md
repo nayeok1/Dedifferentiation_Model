@@ -85,3 +85,7 @@ Therefore, we are going to observe numerical solution and stochastic solution on
       Parameter assumption: p = 1, v0 = 1, v1 =2, d0 = 15, d1 = 11, 𝛾 = 1, r1 = 1.1   
       Trivial steady state is stable. Both numerical solution and stochastic solution verified.   
       Red label = stem cell, Blue label = differentiated cell
+      
+### 5. Cancer cell model
+
+Pancreatic cancer is the fourth most common cause of cancer death. 
