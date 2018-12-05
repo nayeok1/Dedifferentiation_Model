@@ -25,6 +25,7 @@ This model is given by the following set of ordinary differential equations.
 Stem cells and differentiated cells are assumed to divided with a rate v0 and v1. For the stem cell division rate, this division result in the generation of 2 daughter stem cells with probability p (self-renewal). With a probability 1-p, the divison results in the generation of two differentiated cells. Therefore, divison is assume to be symmetric. Stem cells and differentiated cells are assumed to die with a rate d0 and d1. Finally, differentiatd cells are assumed to de-differentiate into stem cells with a constance r1.    
 
 ### Numerical Solution and Stochastic Gillespie Simulation
+To analyze the system easier, we have assumed self-renewal probability p = 1, stem cell division rate v0 = 1, and gamma =1 .   
 #### System with feedback d0 = 0 and r1 ≠ 0
 
 ##### _Case1 : d1 < v1 + r1 with steady state :(0,0)_
@@ -55,4 +56,7 @@ Stem cells and differentiated cells are assumed to divided with a rate v0 and v1
 ![ii.case2.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMzMg/MDAxNTQ0MDA1MjgzMDU1.erRwSEUFJFPD3JBb4DsA4em_6vZhNdb_FED1LBBJo00g.h9ln6xYgkl78G2XFzJF5fEfp7V61R_qNekGP0L_j6gAg.JPEG.nayeonkim93/ii.case2.ODE.jpeg)
 ![ii.case2.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfNjQg/MDAxNTQ0MDA1Mjg3ODU0.uydAxRS-M6yj1w3AvpXuwLdyIMvEUJWOYtey0X_Qorog.fbeGqyvVhohGNGrHuoTA_imKMN4lHt_VnZQaWkI2UCIg.JPEG.nayeonkim93/ii.case2.SSA.jpeg)
 
+      Parameter assumption: p = 1, v0 = 1, v1 =0.1, d0 = 0.1, d1 = 11, gamma = 1, r1 = 0    
+      Steady state is stable. Both numerical solution and stochastic solution verified.
 
+#### System with feedback d0 ≠ 0 and r1 ≠ 0
