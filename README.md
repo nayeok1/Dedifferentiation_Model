@@ -37,6 +37,5 @@ Stem cells and differentiated cells are assumed to divided with a rate v0 and v1
 ##### Case 2: d1 > v1 + r1 with steady state: (0,0) and (0.67,1.67)
 
 ![i.case2.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMjk3/MDAxNTQ0MDAyNTU0Mzky.hboNEOxAB3guvgQWpzMKkPfkwSn1tOOeT9jAS2dDff8g.8hJKSFpMAhnGUzGnp6yJywpUYaSolpNK3cW3XesMxMYg.JPEG.nayeonkim93/i.case2.ODE.jpeg)
-![i.case2.SSA]
-(https://blogfiles.pstatic.net/MjAxODEyMDVfNTAg/MDAxNTQ0MDAyNTU4NTgx.x1zDd4u7On1w5W8bsFm5gyXb1vifv6FKZX8w5pzgnbAg.Ln6DMwlT4IiVQ14wCDICGNzq1aVM4HFhtoDOFKcvfhog.JPEG.nayeonkim93/i.case2.SSA.jpeg)
+![i.case2.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfNTAg/MDAxNTQ0MDAyNTU4NTgx.x1zDd4u7On1w5W8bsFm5gyXb1vifv6FKZX8w5pzgnbAg.Ln6DMwlT4IiVQ14wCDICGNzq1aVM4HFhtoDOFKcvfhog.JPEG.nayeonkim93/i.case2.SSA.jpeg)
 
