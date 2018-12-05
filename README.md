@@ -32,7 +32,7 @@ Stem cells and differentiated cells are assumed to divided with a rate v0 and v1
 ![i.case1.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfMjE4/MDAxNTQ0MDAxOTcxMzMx.ozDmP2SEF2s8MjMlhjo-ISaB3ta_D68T7h_bMijqJzog.alU1Qoy5X8iCJZv1u8nFsnuGtf7tjTnSOMppTPp3uEog.JPEG.nayeonkim93/i.case1.SSA.jpeg)
 
       Parameter assumption: p = 1, v0 = 1, v1 =0.2, d0 = 0, d1 = 0.4, gamma = 1, r1 = 1    
-      Steady stae is unstable. Both numerical solution and stochastic solution verified.
+      Steady state is unstable. Both numerical solution and stochastic solution verified.
 
 ##### _Case 2: d1 > v1 + r1 with steady state:(0.67,1.67)_
 
@@ -40,4 +40,19 @@ Stem cells and differentiated cells are assumed to divided with a rate v0 and v1
 ![i.case2.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfNTAg/MDAxNTQ0MDAyNTU4NTgx.x1zDd4u7On1w5W8bsFm5gyXb1vifv6FKZX8w5pzgnbAg.Ln6DMwlT4IiVQ14wCDICGNzq1aVM4HFhtoDOFKcvfhog.JPEG.nayeonkim93/i.case2.SSA.jpeg)
 
       Parameter assumption: p = 1, v0 = 1, v1 =0.2, d0 = 0, d1 = 0.6, gamma = 1, r1 = 0.1    
-      Steady stae is stable. Both numerical solution and stochastic solution verified.
+      Steady state is stable. Both numerical solution and stochastic solution verified.
+
+#### System with feedback d0 ≠ 0 and r1 = 0
+
+##### _Case 1: |(1-d0)(v1-d1)| < 8(1+d0)_
+![ii.case1.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMTgy/MDAxNTQ0MDAzMzU0MDE1.lrVyhmpqj47n85DUboi3E3GmT4rGubQWYbjYkftkyfkg.CCMth8LpxL9p1VqSHamlFqLPGH-NFP45VhBYMfksmlQg.JPEG.nayeonkim93/ii.case1.ODE.jpeg)
+![ii.case1.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfMTk5/MDAxNTQ0MDAzMzU3ODI3.36psw1Wlf2ICIIwUB-nlyZ9LFXWhSPVMP2BPQ1Vys8Ug.dC4qyQOuK_NJ5ej420WC69IIAtUejKU426SElRr66akg.JPEG.nayeonkim93/ii.case1.SSA.jpeg)
+
+      Parameter assumption: p = 1, v0 = 1, v1 =0.1, d0 = 0.1, d1 = 1, gamma = 1, r1 = 0    
+      Steady state is stable. Both numerical solution and stochastic solution verified.
+      
+##### _Case 2: |(1-d0)(v1-d1)| > 8(1+d0)_
+![ii.case2.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMzMg/MDAxNTQ0MDA1MjgzMDU1.erRwSEUFJFPD3JBb4DsA4em_6vZhNdb_FED1LBBJo00g.h9ln6xYgkl78G2XFzJF5fEfp7V61R_qNekGP0L_j6gAg.JPEG.nayeonkim93/ii.case2.ODE.jpeg)
+![ii.case2.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfNjQg/MDAxNTQ0MDA1Mjg3ODU0.uydAxRS-M6yj1w3AvpXuwLdyIMvEUJWOYtey0X_Qorog.fbeGqyvVhohGNGrHuoTA_imKMN4lHt_VnZQaWkI2UCIg.JPEG.nayeonkim93/ii.case2.SSA.jpeg)
+
+
