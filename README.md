@@ -1,5 +1,8 @@
 # Dedifferentiation Model
 
+### Introduction
+Healthy tissue is charaterized by a specific structure, where stem cells are responsible for tissue maintance and give their designated function. Typically stem cells have own self-renewal ability but also differentiate into terminally differenitated cells. Many research data suggest that tissue homeostasis is maintained through existence of specific negative feedback loop that influence stem cell number and tissue size.  
+
 ### Biological Model
 ![cartoon](https://postfiles.pstatic.net/MjAxODEyMDVfMzQg/MDAxNTQzOTg1NjEzNDM4.b6xSl6o4QJ3rZwNgqqvATYkzRR8mE0o80B5kJBkNYgYg.OveI-ZLeuf6nYc3eXEMVGy134h1nj04XXixW2LcnK54g.PNG.nayeonkim93/image_8549736981543985599247.png?type=w773)
 
@@ -10,7 +13,7 @@ v1 = division rate for X1
 d0 = death rate for X0   
 d1 = death rate for X1   
 r1 = dedifferentiation rate    
-p = sel-rewal probability    
+p = self-rewal probability    
 
 ### Mathematical Model 
 ![stem cell](http://latex.codecogs.com/gif.latex?x_%7B0%7D%27%20%3D%20%282p-1%29v_%7B0%7Dx_%7B0%7D%20-%20d_%7B0%7Dx_%7B0%7D%20&plus;r_%7B1%7Dx_%7B1%7D)   
