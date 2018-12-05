@@ -60,3 +60,5 @@ To analyze the system easier, we have assumed self-renewal probability p = 1, st
       Steady state is stable. Both numerical solution and stochastic solution verified.
 
 #### System with feedback d0 ≠ 0 and r1 ≠ 0
+
+![inequality](https://blogfiles.pstatic.net/MjAxODEyMDVfMjgg/MDAxNTQ0MDA4MDU3NDAz.Sqg968d0xLDzlw-AsyRhNOzjpAQKMNFoPYpNtVDnmpEg.BuDRv6qQlaESjnkB3loxoG0dcJMZg-h3md-HfbIIyCcg.PNG.nayeonkim93/Screen_Shot_2018-12-05_at_3.07.04_AM.png)
