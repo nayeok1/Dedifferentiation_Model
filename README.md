@@ -31,11 +31,13 @@ Stem cells and differentiated cells are assumed to divided with a rate v0 and v1
 ![i.case1.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMjMg/MDAxNTQ0MDAxOTYyMTU0.8FPXNfgEUo_UVWMzpfonAAL9syaykq2HIed79q_HGswg.O7lGNNzz08OOOcPRvJToVWU11OCF85SrOCEza09Qvzsg.JPEG.nayeonkim93/i.case1.ODE.jpeg)
 ![i.case1.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfMjE4/MDAxNTQ0MDAxOTcxMzMx.ozDmP2SEF2s8MjMlhjo-ISaB3ta_D68T7h_bMijqJzog.alU1Qoy5X8iCJZv1u8nFsnuGtf7tjTnSOMppTPp3uEog.JPEG.nayeonkim93/i.case1.SSA.jpeg)
 
-      Parameter assumption: p = 1, v0 = 1, v1 =0.2, d0 = 0, d1 = 0.4, gamma = 1, r1 = 1.    
-      Steady stae is unstable.
+      Parameter assumption: p = 1, v0 = 1, v1 =0.2, d0 = 0, d1 = 0.4, gamma = 1, r1 = 1    
+      Steady stae is unstable. Both numerical solution and stochastic solution verified.
 
-##### Case 2: d1 > v1 + r1 with steady state: (0,0) and (0.67,1.67)
+##### Case 2: d1 > v1 + r1 with steady state:(0.67,1.67)
 
 ![i.case2.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMjk3/MDAxNTQ0MDAyNTU0Mzky.hboNEOxAB3guvgQWpzMKkPfkwSn1tOOeT9jAS2dDff8g.8hJKSFpMAhnGUzGnp6yJywpUYaSolpNK3cW3XesMxMYg.JPEG.nayeonkim93/i.case2.ODE.jpeg)
 ![i.case2.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfNTAg/MDAxNTQ0MDAyNTU4NTgx.x1zDd4u7On1w5W8bsFm5gyXb1vifv6FKZX8w5pzgnbAg.Ln6DMwlT4IiVQ14wCDICGNzq1aVM4HFhtoDOFKcvfhog.JPEG.nayeonkim93/i.case2.SSA.jpeg)
 
+      Parameter assumption: p = 1, v0 = 1, v1 =0.2, d0 = 0, d1 = 0.6, gamma = 1, r1 = 0.1    
+      Steady stae is stable. Both numerical solution and stochastic solution verified.
