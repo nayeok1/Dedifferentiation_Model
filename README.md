@@ -61,4 +61,4 @@ To analyze the system easier, we have assumed self-renewal probability p = 1, st
 
 #### System with feedback d0 ≠ 0 and r1 ≠ 0
 
-![inequality](https://blogfiles.pstatic.net/MjAxODEyMDVfMjgg/MDAxNTQ0MDA4MDU3NDAz.Sqg968d0xLDzlw-AsyRhNOzjpAQKMNFoPYpNtVDnmpEg.BuDRv6qQlaESjnkB3loxoG0dcJMZg-h3md-HfbIIyCcg.PNG.nayeonkim93/Screen_Shot_2018-12-05_at_3.07.04_AM.png)
+![inequality](https://postfiles.pstatic.net/MjAxODEyMDVfMTcx/MDAxNTQ0MDA4NDA4Mzcz.rq11L6PrfVk--9gM6sNvEhJJ6FQlpFXYaqlOBxFxjFQg.nmw958q7dufct9zFCk0LPiJhGuGdb2fnMxPQyGrIAYcg.PNG.nayeonkim93/Screen_Shot_2018-12-05_at_3.07.04_AM.png?type=w773)
