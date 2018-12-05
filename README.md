@@ -34,7 +34,7 @@ To analyze the system easier, we have assumed self-renewal probability p = 1, st
 
       Parameter assumption: p = 1, v0 = 1, v1 =0.2, d0 = 0, d1 = 0.4, 𝛾 = 1, r1 = 1    
       Steady state is unstable. Both numerical solution and stochastic solution verified.   
-      Blue label = stem cell, Red label = differentiated cell
+      Red label = stem cell, Blue label = differentiated cell
 
 ##### _Case 2: d1 > v1 + r1 with steady state:(0.67,1.67)_
 
@@ -43,7 +43,7 @@ To analyze the system easier, we have assumed self-renewal probability p = 1, st
 
       Parameter assumption: p = 1, v0 = 1, v1 =0.2, d0 = 0, d1 = 0.6, 𝛾 = 1, r1 = 0.1    
       Steady state is stable. Both numerical solution and stochastic solution verified.
-      Blue label = stem cell, Red label = differentiated cell
+      Red label = stem cell, Blue label = differentiated cell
 
 #### System with feedback d0 ≠ 0 and r1 = 0
 
@@ -53,7 +53,7 @@ To analyze the system easier, we have assumed self-renewal probability p = 1, st
 
       Parameter assumption: p = 1, v0 = 1, v1 =0.1, d0 = 0.1, d1 = 1, 𝛾 = 1, r1 = 0    
       Steady state is stable. Both numerical solution and stochastic solution verified.   
-      Blue label = stem cell, Red label = differentiated cell
+      Red label = stem cell, Blue label = differentiated cell
       
 ##### _Case 2: |(1-d0)(v1-d1)| > 8(1+d0)_
 ![ii.case2.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMzMg/MDAxNTQ0MDA1MjgzMDU1.erRwSEUFJFPD3JBb4DsA4em_6vZhNdb_FED1LBBJo00g.h9ln6xYgkl78G2XFzJF5fEfp7V61R_qNekGP0L_j6gAg.JPEG.nayeonkim93/ii.case2.ODE.jpeg)
@@ -61,7 +61,7 @@ To analyze the system easier, we have assumed self-renewal probability p = 1, st
 
       Parameter assumption: p = 1, v0 = 1, v1 =0.1, d0 = 0.1, d1 = 11, 𝛾 = 1, r1 = 0    
       Steady state is stable. Both numerical solution and stochastic solution verified.   
-      Blue label = stem cell, Red label = differentiated cell
+      Red label = stem cell, Blue label = differentiated cell
 
 #### System with feedback d0 ≠ 0 and r1 ≠ 0
 
@@ -76,8 +76,8 @@ Therefore, we are going to observe numerical solution and stochastic solution on
 ![iii.case1.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfMjcx/MDAxNTQ0MDA4MzUzODUx.DbogCy9c4KGxvA-SeI8qeUDRBjR5oye__cT0kFVx_IEg.c4EqLrAWfSNbunyFO_vUoGeWQX_dEg_RbJ-aeupc5ssg.JPEG.nayeonkim93/iii.case1.SSA.jpeg)
 
       Parameter assumption: p = 1, v0 = 1, v1 =0.5, d0 = 0.1, d1 = 1, 𝛾 = 1, r1 = 0.2    
-      Steady state is stable. Both numerical solution and stochastic solution verified.   
-      Blue label = stem cell, Red label = differentiated cell
+      Non trivial steady state is stable. Both numerical solution and stochastic solution verified.   
+      Red label = stem cell, Blue label = differentiated cell
 ##### _Case 3_
 ![iii.case3.ODE]()
 ![iii.case3.SSA]()
