@@ -103,9 +103,12 @@ In this paper, they have tested whether SAL alone or combined with GEM is capabl
 Figure A is CD133+ cell and Figure represents CD133- cell. As a result, SAL had marked inhibition on CD133+ and GEM showed better antiproliferative effect on CD133-. Interestingly, combined treatment led to a nearly complete abolishment of both CSCs and differentiated cells in vitro. 
 
 #### 5.2. Parameter Fitting with mathematical model
-Because my model is based on population but the model I am looking at is cell volume, I had to do literature search for the conversion. Average cancer stem cells (CSCs) size is 1-10 um [Qiuhui Li](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4651715/). Therefore, average CSC volume is 5.23 X 10^(-7) when we consider this cells as sphere. Pancreatic cancer cell size measures as average of 11-16 um in diameter [Angelyn V. Nguyen](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5866717/). So average differenitated pancreatic cell volume is 1.15 X 10^(-5). 
+Because my model is based on population but the model I am looking at is cell volume, I had to do literature search for the conversion. Average cancer stem cells (CSCs) size is 1-10 um ([Qiuhui Li](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4651715/)). Therefore, average CSC volume is 5.23 X 10^(-7) when we consider this cells as sphere. Pancreatic cancer cell size measures as average of 11-16 um in diameter ([Angelyn V. Nguyen](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5866717/)). So average differenitated pancreatic cell volume is 1.15 X 10^(-5). The data we have extracted is CNT in the figure. 
 
 ![extract](https://blogfiles.pstatic.net/MjAxODEyMTJfMjMg/MDAxNTQ0NTU2MjU0NDI0.UXG8pYjIJNQ_t8EOYrpXL46caFQkQbcQstrXWC3gaTUg.mh2-YzQ3PJaG52F706yWUG6p8xe7bhN6P-ouKgQ1irYg.JPEG.nayeonkim93/tumor_regression.jpeg)
 
-Based on what I have observed from the previous section. Systems bahave differently with different parameters set. What we want for the cancer model is diverge from the steady state which we can 
+Based on what I have observed from the previous section. Systems bahave differently with different parameter sets. What I want for the cancer model is diverge from the steady state which I can use the system with feedback d0 = 0 and r1 ≠ 0 and d1 < v1 + r1 (4.1. case1). 
+
 ![parameter fitting](https://blogfiles.pstatic.net/MjAxODEyMTJfMTE5/MDAxNTQ0NTU2MjUwODE2.j577gqLqkeQ6k6HzRsnW6sw_F41XjXvnmVqXvO-bESsg.d2MxAJVQ_ixlKZ7vVip5Fla-wREANcZjPQXFACQKr0sg.JPEG.nayeonkim93/Tumor_regression_of_xenograft_ODE.jpeg)
+
+I have 
