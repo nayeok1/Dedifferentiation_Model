@@ -111,4 +111,7 @@ Based on what I have observed from the previous section. Systems bahave differen
 
 ![parameter fitting](https://blogfiles.pstatic.net/MjAxODEyMTJfMTE5/MDAxNTQ0NTU2MjUwODE2.j577gqLqkeQ6k6HzRsnW6sw_F41XjXvnmVqXvO-bESsg.d2MxAJVQ_ixlKZ7vVip5Fla-wREANcZjPQXFACQKr0sg.JPEG.nayeonkim93/Tumor_regression_of_xenograft_ODE.jpeg)
 
-I have 
+      Parameter assumption for CD133+: p = 1, v0 = 1, v1 =7, d0 = 0, d1 = 13, 𝛾 = 1, r1 = 25 
+      Parameter assumption for CD133-: p = 1, v0 = 1, v1 =8, d0 = 0, d1 = 13, 𝛾 = 1, r1 = 24    
+      Red label = CD133+, Blue label = CD133-
+     
