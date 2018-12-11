@@ -88,4 +88,4 @@ Therefore, we are going to observe numerical solution and stochastic solution on
       
 ### 5. Cancer cell model
 
-Pancreatic cancer is the fourth most common cause of cancer death. Pancreatic cell size measures as average of 0.1 mm in diameter. So average differenitated pancreatic cell volume is 5.25 X 10^(-4) when we consider this cell is sphere. 
+Pancreatic cancer is the fourth most common cause of cancer death. Average cancer stem cells (CSCs) size is 1-10 um. Therefore, average CSC volume is 5.23 X 10^(-7) when we consider this cells as sphere. Pancreatic cancer cell size measures as average of 11-16 um in diameter. So average differenitated pancreatic cell volume is 1.15 X 10^(-5). 
