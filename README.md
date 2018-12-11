@@ -110,11 +110,12 @@ Because my model is based on population but the model I am looking at is cell vo
        Red label = CD133+ treated with vehicle
        Blue label = CD133- treated with vehicle
        
-Based on what I have observed from the previous section. Systems bahave differently with different parameter sets. What I want for the cancer model is diverge from the steady state which I can use the system with feedback d0 = 0 and r1 ≠ 0 and d1 < v1 + r1 (4.1. case1). 
+Based on what I have observed from the previous section. Systems bahave differently with different parameter sets. What I want for the cancer model is diverge from the steady state which I can use the system with feedback d0 = 0 and r1 ≠ 0 and d1 < v1 + r1 (4.1. case1). But I have modified d0 to delay the growth exponentially. 
 
 ![parameter fitting](https://blogfiles.pstatic.net/MjAxODEyMTJfMTE5/MDAxNTQ0NTU2MjUwODE2.j577gqLqkeQ6k6HzRsnW6sw_F41XjXvnmVqXvO-bESsg.d2MxAJVQ_ixlKZ7vVip5Fla-wREANcZjPQXFACQKr0sg.JPEG.nayeonkim93/Tumor_regression_of_xenograft_ODE.jpeg)
 
-      Parameter assumption for CD133+: p = 1, v0 = 1, v1 =7, d0 = 0, d1 = 13, 𝛾 = 1, r1 = 25 
-      Parameter assumption for CD133-: p = 1, v0 = 1, v1 =8, d0 = 0, d1 = 13, 𝛾 = 1, r1 = 24    
+      Parameter assumption for CD133+: p = 1, v0 = 1, v1 =7, d0 = 0.3, d1 = 13, 𝛾 = 1, r1 = 25 
+      Parameter assumption for CD133-: p = 1, v0 = 1, v1 =8, d0 = 0.3, d1 = 13, 𝛾 = 1, r1 = 24    
       Red label = CD133+, Blue label = CD133-
      
+Both of the CD133+ and CD133- shows the similar behavior so we can play with parameter set little bit to get the different population. With only small change of r1 and v1, we could observe the similar behavior as the xenograft model in vitro. 
