@@ -98,5 +98,4 @@ Average cancer stem cells (CSCs) size is 1-10 um. Therefore, average CSC volume 
 
 ![extract](https://blogfiles.pstatic.net/MjAxODEyMTJfMjMg/MDAxNTQ0NTU2MjU0NDI0.UXG8pYjIJNQ_t8EOYrpXL46caFQkQbcQstrXWC3gaTUg.mh2-YzQ3PJaG52F706yWUG6p8xe7bhN6P-ouKgQ1irYg.JPEG.nayeonkim93/tumor_regression.jpeg)
 
-![parameter fitting]
-(https://blogfiles.pstatic.net/MjAxODEyMTJfMTE5/MDAxNTQ0NTU2MjUwODE2.j577gqLqkeQ6k6HzRsnW6sw_F41XjXvnmVqXvO-bESsg.d2MxAJVQ_ixlKZ7vVip5Fla-wREANcZjPQXFACQKr0sg.JPEG.nayeonkim93/Tumor_regression_of_xenograft_ODE.jpeg)
+![parameter fitting](https://blogfiles.pstatic.net/MjAxODEyMTJfMTE5/MDAxNTQ0NTU2MjUwODE2.j577gqLqkeQ6k6HzRsnW6sw_F41XjXvnmVqXvO-bESsg.d2MxAJVQ_ixlKZ7vVip5Fla-wREANcZjPQXFACQKr0sg.JPEG.nayeonkim93/Tumor_regression_of_xenograft_ODE.jpeg)
