@@ -88,4 +88,4 @@ Therefore, we are going to observe numerical solution and stochastic solution on
       
 ### 5. Cancer cell model
 
-Pancreatic cancer is the fourth most common cause of cancer death. 
+Pancreatic cancer is the fourth most common cause of cancer death. Pancreatic cell size measures as average of 0.1 mm in diameter. So average differenitated pancreatic cell volume is 5.25 X 10^(-4) when we consider this cell is sphere. 
