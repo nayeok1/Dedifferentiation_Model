@@ -88,7 +88,7 @@ Therefore, we are going to observe numerical solution and stochastic solution on
       
 ### 5. Cancer cell model
 
-#### 5.1. Biological Result from other paper
+#### 5.1. Biological Result from the paper
 Pancreatic cancer is the fourth most common cause of cancer death. However, recently, they have found that there are two different efficient treatment for this cancer. 
 
 1. _Gemcitabine(GEM)_   
@@ -96,11 +96,14 @@ Pancreatic cancer is the fourth most common cause of cancer death. However, rece
 2. _Salinomycin (SAL)_    
    SAL has recently been shown to selectively deplete human breast cancer stem cells, which reduces the proportion of CSCs by > 100 fold relative to paclitaxel. Furthermore, SAL can overcome drug resistance in human cancer cells. More interestingly, SAL may sensitize cancer cells to effect of doxorubicin or etoposide treatment. 
 
-In this paper, they have tested whether SAL alone or combined with GEM is capable of eliminating pancreatic cancer cells. This paper is purely based on biological model instead of mathematcial model. They have tested this on xenograft model of human pancreatic cancer. Both CD133+ and CD133 cells were injected subcutaneously into the right flank of the mice using a 23-gauge needle at a 2 X 10^6 cells per mouse The size and weight of the tumors were monitored every other day. Once the tumors reached a mean diameter of 2–4 mm, both groups of mice (CD133+ and CD133) were randomized to four subgroups with six animals each. The mice were then treated with vehicle, GEM, SAL or their combination. 
+In this paper, they have tested whether SAL alone or combined with GEM is capable of eliminating pancreatic cancer cells. This paper is purely based on biological model instead of mathematcial model. They have tested this on xenograft model of human pancreatic cancer. Both CD133+ and CD133 cells were injected subcutaneously into the right flank of the mice using a 23-gauge needle at a 2 X 10^6 cells per mouse The size and weight of the tumors were monitored every other day. Once the tumors reached a mean diameter of 2–4 mm, both groups of mice (CD133+ and CD133) were randomized to four subgroups with six animals each. The mice were then treated with vehicle, GEM, SAL or their combination.    
 
 ![figure6](https://ars.els-cdn.com/content/image/1-s2.0-S0304383511003077-gr6_lrg.jpg)
 
+Figure A is CD133+ cell and Figure represents CD133- cell. As a result, SAL had marked inhibition on CD133+ and GEM showed better antiproliferative effect on CD133-. Interestingly, combined treatment led to a nearly complete abolishment of both CSCs and differentiated cells in vitro. 
+
 #### 5.2. Parameter Fitting with mathematical model
+Because our model is population but the model we are looking at 
 Average cancer stem cells (CSCs) size is 1-10 um. Therefore, average CSC volume is 5.23 X 10^(-7) when we consider this cells as sphere. Pancreatic cancer cell size measures as average of 11-16 um in diameter. So average differenitated pancreatic cell volume is 1.15 X 10^(-5). 
 
 ![extract](https://blogfiles.pstatic.net/MjAxODEyMTJfMjMg/MDAxNTQ0NTU2MjU0NDI0.UXG8pYjIJNQ_t8EOYrpXL46caFQkQbcQstrXWC3gaTUg.mh2-YzQ3PJaG52F706yWUG6p8xe7bhN6P-ouKgQ1irYg.JPEG.nayeonkim93/tumor_regression.jpeg)
