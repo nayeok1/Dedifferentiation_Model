@@ -98,7 +98,7 @@ Pancreatic cancer is the fourth most common cause of cancer death. However, rece
 
 In this paper, they have tested whether SAL alone or combined with GEM is capable of eliminating pancreatic cancer cells. This paper is purely based on biological model instead of mathematcial model. They have tested this on xenograft model of human pancreatic cancer. Both CD133+ and CD133 cells were injected subcutaneously into the right flank of the mice using a 23-gauge needle at a 2 X 10^6 cells per mouse The size and weight of the tumors were monitored every other day. Once the tumors reached a mean diameter of 2–4 mm, both groups of mice (CD133+ and CD133) were randomized to four subgroups with six animals each. The mice were then treated with vehicle, GEM, SAL or their combination. 
 
-![figure6](https://blogfiles.pstatic.net/MjAxODEyMTJfMTE2/MDAxNTQ0NTU3NDI1OTQy.Tcny2tHcowaUBcyc9Kf440rnLzCK3M9C_e3igSKnuXMg._71k4RSjB9I7uCWIH-_mUduFna9B4XqE-YswIywQSpwg.PNG.nayeonkim93/Screen_Shot_2018-12-11_at_11.34.59_AM.png)
+![figure6](https://ars.els-cdn.com/content/image/1-s2.0-S0304383511003077-gr6_lrg.jpg)
 
 #### 5.2. Parameter Fitting with mathematical model
 Average cancer stem cells (CSCs) size is 1-10 um. Therefore, average CSC volume is 5.23 X 10^(-7) when we consider this cells as sphere. Pancreatic cancer cell size measures as average of 11-16 um in diameter. So average differenitated pancreatic cell volume is 1.15 X 10^(-5). 
