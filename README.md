@@ -2,7 +2,7 @@
 
 ### 1. Introduction
 Healthy tissue is charaterized by a specific structure, where stem cells are responsible for tissue maintance and give their designated function. Typically stem cells have own self-renewal ability but also differentiate into terminally differenitated cells. Data suggest that tissue homeostasis is maintained through existence of specific negative feedback loop that influence stem cell number and tissue size.     
-It is thought that tumors are maintained by so caled cancer stem cell(CSC), and that the majority of the tumor is made up of more differentiated cancer cells that have limited ability to maintain the existence of the tumor. Similiarly, it has been suggested that feedback loops which regulate healthy tissue homeostasis are maintained to a certain extent in tumors, and observed tumor growth patterns support this notion.   
+It is thought that tumors are maintained by so called cancer stem cell(CSC), and that the majority of the tumor is made up of more differentiated cancer cells that have limited ability to maintain the existence of the tumor. Similiarly, it has been suggested that feedback loops which regulate healthy tissue homeostasis are maintained to a certain extent in tumors, and observed tumor growth patterns support this notion.   
 Both healthy tissue as well as tumor cell dynamics have been studied with mathematical models in the context of hierachically structured cell population. 
 
 ### 2. Biological Model and parameters 
