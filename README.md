@@ -89,7 +89,13 @@ Therefore, we are going to observe numerical solution and stochastic solution on
 ### 5. Cancer cell model
 
 #### 5.1. Biological Result from other paper
-Pancreatic cancer is the fourth most common cause of cancer death. 
+Pancreatic cancer is the fourth most common cause of cancer death. However, recently, they have found that there are two different efficient treatment for this cancer. 
+
+1. _Gemcitabine(GEM)_   
+   GEM has been used chemotherapeutic agen over the past decade. Unfortunately, numerous phase III trials testing GEM combined with other cytotoxic drugs have failed to reveal any additional benefit compared with GEM alone.   
+2. _Salinomycin (SAL)_ 
+   SAL has recently been shown to selectively deplete human breast cancer stem cells, which reduces the proportion of CSCs by > 100 fold relative to paclitaxel. Furthermore, SAL can overcome drug resistance in human cancer cells. More interestingly, SAL may sensitize cancer cells to effect of doxorubicin or etoposide treatment. 
+
 
 ![figure6](https://blogfiles.pstatic.net/MjAxODEyMTJfMTA4/MDAxNTQ0NTU2MjQ2NTgw.REx5qn2O2pRQG1Xrktv6eIplRP973sC5TOIJRXsCGD4g.Uu2Pt78mwD8-XU4bZsivjavHmfRjR9jM7pTUpya3F7sg.PNG.nayeonkim93/figure6.png)
 
