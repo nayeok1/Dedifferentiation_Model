@@ -93,11 +93,12 @@ Pancreatic cancer is the fourth most common cause of cancer death. However, rece
 
 1. _Gemcitabine(GEM)_   
    GEM has been used chemotherapeutic agen over the past decade. Unfortunately, numerous phase III trials testing GEM combined with other cytotoxic drugs have failed to reveal any additional benefit compared with GEM alone.   
-2. _Salinomycin (SAL)_ 
+2. _Salinomycin (SAL)_    
    SAL has recently been shown to selectively deplete human breast cancer stem cells, which reduces the proportion of CSCs by > 100 fold relative to paclitaxel. Furthermore, SAL can overcome drug resistance in human cancer cells. More interestingly, SAL may sensitize cancer cells to effect of doxorubicin or etoposide treatment. 
 
+In this paper, they have tested whether SAL alone or combined with GEM is capable of eliminating pancreatic cancer cells. This paper is purely based on biological model instead of mathematcial model. They have tested this on xenograft model of human pancreatic cancer. Both CD133+ and CD133 cells were injected subcutaneously into the right flank of the mice using a 23-gauge needle at a 2 X 10^6 cells per mouse The size and weight of the tumors were monitored every other day. Once the tumors reached a mean diameter of 2–4 mm, both groups of mice (CD133+ and CD133) were randomized to four subgroups with six animals each. The mice were then treated with vehicle, GEM, SAL or their combination. 
 
-![figure6](https://blogfiles.pstatic.net/MjAxODEyMTJfMTA4/MDAxNTQ0NTU2MjQ2NTgw.REx5qn2O2pRQG1Xrktv6eIplRP973sC5TOIJRXsCGD4g.Uu2Pt78mwD8-XU4bZsivjavHmfRjR9jM7pTUpya3F7sg.PNG.nayeonkim93/figure6.png)
+![figure6](https://blogfiles.pstatic.net/MjAxODEyMTJfMTE2/MDAxNTQ0NTU3NDI1OTQy.Tcny2tHcowaUBcyc9Kf440rnLzCK3M9C_e3igSKnuXMg._71k4RSjB9I7uCWIH-_mUduFna9B4XqE-YswIywQSpwg.PNG.nayeonkim93/Screen_Shot_2018-12-11_at_11.34.59_AM.png)
 
 #### 5.2. Parameter Fitting with mathematical model
 Average cancer stem cells (CSCs) size is 1-10 um. Therefore, average CSC volume is 5.23 X 10^(-7) when we consider this cells as sphere. Pancreatic cancer cell size measures as average of 11-16 um in diameter. So average differenitated pancreatic cell volume is 1.15 X 10^(-5). 
