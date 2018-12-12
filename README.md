@@ -1,15 +1,16 @@
 # Dedifferentiation Model
 
 ### 1. Introduction
-Healthy tissue is charaterized by a specific structure, where stem cells are responsible for tissue maintance and give their designated function. Typically stem cells have own self-renewal ability but also differentiate into terminally differenitated cells. Data suggest that tissue homeostasis is maintained through existence of specific negative feedback loop that influence stem cell number and tissue size.     
+Healthy tissue is charaterized by a specific structure, where stem cells are responsible for tissue maintanence and give their designated function. Typically stem cells have own self-renewal ability but also differentiate into terminally differenitated cells. Data suggest that tissue homeostasis is maintained through existence of specific negative feedback loop that influence stem cell number and tissue size.     
 It is thought that tumors are maintained by so called cancer stem cell(CSC), and that the majority of the tumor is made up of more differentiated cancer cells that have limited ability to maintain the existence of the tumor. Similiarly, it has been suggested that feedback loops which regulate healthy tissue homeostasis are maintained to a certain extent in tumors, and observed tumor growth patterns support this notion.   
 Both healthy tissue as well as tumor cell dynamics have been studied with mathematical models in the context of hierachically structured cell population. 
 
 ### 2. Biological Model and parameters 
-Here, we review the biological cartoon model of stem cell-driven tissue dynamics. In this form, this model contains two population: the stem cells: X0, and the more differentiated cells, X1. This model can correspond to either healthy tissue cell or to tumor cell populations, depending on the scenario to which the model is applied to.  
+Here, we review the biological cartoon model of stem cell-driven tissue dynamics. In this form, this model contains two population: the stem cells, X0 and differentiated cells, X1. This model can correspond to either healthy tissue cell or to tumor cell populations, depending on the scenario to which the model is applied to.  
+
 ![cartoon](https://postfiles.pstatic.net/MjAxODEyMDVfMzQg/MDAxNTQzOTg1NjEzNDM4.b6xSl6o4QJ3rZwNgqqvATYkzRR8mE0o80B5kJBkNYgYg.OveI-ZLeuf6nYc3eXEMVGy134h1nj04XXixW2LcnK54g.PNG.nayeonkim93/image_8549736981543985599247.png?type=w773)
 
-X0 = Stem Cell, X1 = Non-Stem Cell (differentiated cell)    
+X0 = Stem Cell, X1 = differentiated cell      
 v0 = divison rate for X0, v1 = division rate for X1   
 d0 = death rate for X0, d1 = death rate for X1   
 r1 = dedifferentiation rate   
@@ -25,8 +26,9 @@ This model is given by the following set of ordinary differential equations.
 Stem cells and differentiated cells are assumed to divided with a rate v0 and v1. For the stem cell division rate, this division result in the generation of 2 daughter stem cells with probability p (self-renewal). With a probability 1-p, the divison results in the generation of two differentiated cells. Therefore, divison is assume to be symmetric. Stem cells and differentiated cells are assumed to die with a rate d0 and d1. Finally, differentiatd cells are assumed to de-differentiate into stem cells with a constance r1.    
 
 ### 4. Numerical Solution and Stochastic Gillespie Simulation
-To analyze the system easier, we have assumed self-renewal probability p = 1, stem cell division rate v0 = 1, and 𝛾 =1 .   
-#### 4.1. System with feedback d0 = 0 and r1 ≠ 0
+To analyze the system easier, we have assumed self-renewal probability p = 1, stem cell division rate v0 = 1, and 𝛾 =1 . These enequailities are obtained by linear stability anaylsis. We obtained the steady states and perform linear stability anaylsis to check the stability. Depends on the parameter sets, system converges to the different steady states and has either stable or unstable state. 
+
+#### 4.1. System with feedback on p with d0 = 0 and r1 ≠ 0
 
 ##### _Case1 : d1 < v1 + r1 with steady state :(0,0)_
 ![i.case1.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMjMg/MDAxNTQ0MDAxOTYyMTU0.8FPXNfgEUo_UVWMzpfonAAL9syaykq2HIed79q_HGswg.O7lGNNzz08OOOcPRvJToVWU11OCF85SrOCEza09Qvzsg.JPEG.nayeonkim93/i.case1.ODE.jpeg)
@@ -36,6 +38,7 @@ To analyze the system easier, we have assumed self-renewal probability p = 1, st
       Steady state is unstable. Both numerical solution and stochastic solution verified.   
       Red label = stem cell, Blue label = differentiated cell
 
+When d1 < v1 + r1, system diverges from steady state (0,0). Which means population of stem and differentiated cell explode. 
 ##### _Case 2: d1 > v1 + r1 with steady state:(0.67,1.67)_
 
 ![i.case2.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMjk3/MDAxNTQ0MDAyNTU0Mzky.hboNEOxAB3guvgQWpzMKkPfkwSn1tOOeT9jAS2dDff8g.8hJKSFpMAhnGUzGnp6yJywpUYaSolpNK3cW3XesMxMYg.JPEG.nayeonkim93/i.case2.ODE.jpeg)
@@ -45,7 +48,7 @@ To analyze the system easier, we have assumed self-renewal probability p = 1, st
       Steady state is stable. Both numerical solution and stochastic solution verified.
       Red label = stem cell, Blue label = differentiated cell
 
-#### 4.2. System with feedback d0 ≠ 0 and r1 = 0
+#### 4.2. System with feedback on p with d0 ≠ 0 and r1 = 0
 
 ##### _Case 1: |(1-d0)(v1-d1)| < 8(1+d0) with steady state: (0.82,0.82)_
 ![ii.case1.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMTgy/MDAxNTQ0MDAzMzU0MDE1.lrVyhmpqj47n85DUboi3E3GmT4rGubQWYbjYkftkyfkg.CCMth8LpxL9p1VqSHamlFqLPGH-NFP45VhBYMfksmlQg.JPEG.nayeonkim93/ii.case1.ODE.jpeg)
@@ -63,7 +66,7 @@ To analyze the system easier, we have assumed self-renewal probability p = 1, st
       Non trivial steady state is stable. Both numerical solution and stochastic solution verified.   
       Red label = stem cell, Blue label = differentiated cell
 
-#### 4.3. System with feedback d0 ≠ 0 and r1 ≠ 0
+#### 4.3. System with feedback on p with d0 ≠ 0 and r1 ≠ 0
 
 By using linear stability analysis, we have achieved two steady states. For non-trivial steady state to be positive, we have four cases, but case 2 and case 4 fails because of contradiction of inequality. 
 
