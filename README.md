@@ -26,7 +26,7 @@ This model is given by the following set of ordinary differential equations.
 Stem cells and differentiated cells are assumed to divided with a rate v0 and v1. For the stem cell division rate, this division result in the generation of 2 daughter stem cells with probability p (self-renewal). With a probability 1-p, the divison results in the generation of two differentiated cells. Therefore, divison is assume to be symmetric. Stem cells and differentiated cells are assumed to die with a rate d0 and d1. Finally, differentiatd cells are assumed to de-differentiate into stem cells with a constance r1.    
 
 ### 4. Numerical Solution and Stochastic Gillespie Simulation
-To analyze the system easier, we have assumed self-renewal probability p = 1, stem cell division rate v0 = 1, and 𝛾 =1 . These enequailities are obtained by linear stability anaylsis. We obtained the steady states and perform linear stability anaylsis to check the stability. Depends on the parameter sets, system converges to the different steady states and has either stable or unstable state. 
+To analyze the system easier, we have assumed self-renewal probability p = 1, stem cell division rate v0 = 1, and 𝛾 =1 . These enequailities are obtained by linear stability anaylsis. We obtained the steady states and perform linear stability anaylsis to check the stability. Depends on the parameter sets, system converges to the different steady states and has either stable or unstable state. I have performed both Ordinary Differential Equation (ODE) model and stochastic Gillespie model. 
 
 #### 4.1. System with feedback on p with d0 = 0 and r1 ≠ 0
 
@@ -39,6 +39,7 @@ To analyze the system easier, we have assumed self-renewal probability p = 1, st
       Red label = stem cell, Blue label = differentiated cell
 
 When d1 < v1 + r1, system diverges from steady state (0,0). Which means population of stem and differentiated cell explode. 
+
 ##### _Case 2: d1 > v1 + r1 with steady state:(0.67,1.67)_
 
 ![i.case2.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMjk3/MDAxNTQ0MDAyNTU0Mzky.hboNEOxAB3guvgQWpzMKkPfkwSn1tOOeT9jAS2dDff8g.8hJKSFpMAhnGUzGnp6yJywpUYaSolpNK3cW3XesMxMYg.JPEG.nayeonkim93/i.case2.ODE.jpeg)
@@ -89,31 +90,39 @@ Therefore, we are going to observe numerical solution and stochastic solution on
       Trivial steady state is stable. Both numerical solution and stochastic solution verified.   
       Red label = stem cell, Blue label = differentiated cell
       
+Except the 4.1 case 1, the other cases converge to steady states, either trivial steady state or non-trivial steady state. Which mean stem cell and differentiated cell completely die out or after few days it will just stay at the same population for long time. 
+
 ### 5. Cancer cell model
 
-#### 5.1. Biological Result from the paper
+#### 5.1. Experimental data: biological result from the cancer paper 
+
+I am going to refer the cancer paper that I have attached in file. This data is experimental data and we are going to use this experimental data to compare with our mathematical model.   
+
 Pancreatic cancer is the fourth most common cause of cancer death. However, recently, they have found that there are two different efficient treatment for this cancer. 
 
 1. _Gemcitabine(GEM)_   
-   GEM has been used chemotherapeutic agen over the past decade. Unfortunately, numerous phase III trials testing GEM combined with other cytotoxic drugs have failed to reveal any additional benefit compared with GEM alone.   
+   GEM has been used chemotherapeutic agent over the past decade. Unfortunately, numerous phase III trials testing GEM combined with other cytotoxic drugs have failed to reveal any additional benefit compared with GEM alone.   
 2. _Salinomycin (SAL)_    
    SAL has recently been shown to selectively deplete human breast cancer stem cells, which reduces the proportion of CSCs by > 100 fold relative to paclitaxel. Furthermore, SAL can overcome drug resistance in human cancer cells. More interestingly, SAL may sensitize cancer cells to effect of doxorubicin or etoposide treatment. 
 
-In this paper, they have tested whether SAL alone or combined with GEM is capable of eliminating pancreatic cancer cells. This paper is purely based on biological model instead of mathematcial model. They have tested this on xenograft model of human pancreatic cancer. Both CD133+ and CD133 cells were injected subcutaneously into the right flank of the mice using a 23-gauge needle at a 2 X 10^6 cells per mouse The size and weight of the tumors were monitored every other day. Once the tumors reached a mean diameter of 2–4 mm, both groups of mice (CD133+ and CD133) were randomized to four subgroups with six animals each. The mice were then treated with vehicle, GEM, SAL or their combination.    
+In this paper, they have tested whether SAL alone or combined with GEM is capable of eliminating pancreatic cancer cells. This paper is purely based on biological model instead of mathematcial model. They have tested this on xenograft model of human pancreatic cancer. Both CD133+ and CD133 cells were injected subcutaneously into the right flank of the mice using a 23-gauge needle at a 2 X 10^6 cells per mouse. The size and weight of the tumors were monitored every other day. Once the tumors reached a mean diameter of 2–4 mm, both groups of mice (CD133+ and CD133) were randomized to four subgroups with six animals each. The mice were then treated with vehicle, GEM, SAL or their combination.    
 
 ![figure6](https://ars.els-cdn.com/content/image/1-s2.0-S0304383511003077-gr6_lrg.jpg)
 
-Figure A is CD133+ cell and Figure represents CD133- cell. As a result, SAL had marked inhibition on CD133+ and GEM showed better antiproliferative effect on CD133-. Interestingly, combined treatment led to a nearly complete abolishment of both CSCs and differentiated cells in vitro. 
+Figure A is CD133+ and Figure represents CD133-. As a result, SAL had marked inhibition on CD133+ and GEM showed better antiproliferative effect on CD133-. Interestingly, combined treatment led to a nearly complete abolishment of both CSCs and differentiated cells in vitro. 
 
-#### 5.2. Parameter Fitting with mathematical model
-Because my model is based on population but the model I am looking at is cell volume, I had to do literature search for the conversion. Average cancer stem cells (CSCs) size is 1-10 um ([Qiuhui Li](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4651715/)). Therefore, average CSC volume is 5.23 X 10^(-7) when we consider this cells as sphere. Pancreatic cancer cell size measures as average of 11-16 um in diameter ([Angelyn V. Nguyen](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5866717/)). So average differenitated pancreatic cell volume is 1.15 X 10^(-5). The data we have extracted is CNT in the figure. The population is including cancer stem cell and differentiated cell. Even our ODE model, differentiated cells are posessed more than the stem cells and (also biological research found that stem cell fastly differentiat to differentiated cells than as it remain.)([Enza Lonardo](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5527928/)) I assume that proportion of CSC to differentiated cancer cell is 3:7. 
+#### 5.2. Mathematical model: parameter fitting
+
+Because my model is based on population but the model I am looking at is cell volume, I had to do literature search for the conversion. Average cancer stem cells (CSCs) size is 1-10 um([Qiuhui Li](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4651715/)). Therefore, waverage CSC volume is 5.23 X 10^(-7) when we consider this cells as sphere. Pancreatic cancer cell size measures as average of 11-16 um in diameter ([Angelyn V. Nguyen](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5866717/)). So average differenitated pancreatic cell volume is 1.15 X 10^(-5).   
+
+The data we are using is CNT in the figure above. The population is including cancer stem cell and differentiated cell. Even our ODE model, differentiated cells are posessed more than the stem cells and also biological research found that "tumor is made up of more differentiated cancer cells"([Enza Lonardo](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5527928/)). I assume that proportion of CSC to differentiated cancer cell is 3:7 for the CD 133+ and all differentiated cancer cell for CD 133-. 
 
 ![extract](https://blogfiles.pstatic.net/MjAxODEyMTJfMjMg/MDAxNTQ0NTU2MjU0NDI0.UXG8pYjIJNQ_t8EOYrpXL46caFQkQbcQstrXWC3gaTUg.mh2-YzQ3PJaG52F706yWUG6p8xe7bhN6P-ouKgQ1irYg.JPEG.nayeonkim93/tumor_regression.jpeg)
 
        Red label = CD133+ treated with vehicle
        Blue label = CD133- treated with vehicle
        
-Based on what I have observed from the previous section. Systems bahave differently with different parameter sets. What I want for the cancer model is diverge from the steady state which I can use the system with feedback d0 = 0 and r1 ≠ 0 and d1 < v1 + r1 (4.1. case1). But I have modified d0 to delay the growth exponentially. 
+Based on what I have observed from the previous section. Systems bahave differently with different parameter sets. What I want for the cancer model is diverge from the steady state which I can use the system with feedback d0 = 0 and r1 ≠ 0 and d1 < v1 + r1 (4.1. case1) but I have modified d0 to delay the growth exponentially. 
 
 ![parameter fitting](https://blogfiles.pstatic.net/MjAxODEyMTJfMTE5/MDAxNTQ0NTU2MjUwODE2.j577gqLqkeQ6k6HzRsnW6sw_F41XjXvnmVqXvO-bESsg.d2MxAJVQ_ixlKZ7vVip5Fla-wREANcZjPQXFACQKr0sg.JPEG.nayeonkim93/Tumor_regression_of_xenograft_ODE.jpeg)
 
@@ -122,3 +131,5 @@ Based on what I have observed from the previous section. Systems bahave differen
       Red label = CD133+, Blue label = CD133-
      
 Both of the CD133+ and CD133- shows the similar behavior so we can play with parameter set little bit to get the different population. With only small change of r1 and v1, we could observe the similar behavior as the xenograft model in vitro. 
+
+### 6. Conclusion
