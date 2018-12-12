@@ -133,3 +133,5 @@ Based on what I have observed from the previous section. Systems bahave differen
 Both of the CD133+ and CD133- shows the similar behavior so we can play with parameter set little bit to get the different population. With only small change of r1 and v1, we could observe the similar behavior as the xenograft model in vitro. 
 
 ### 6. Conclusion
+
+For the normal tissue, population converges to steady state; it could be trivial steady state or trivial steady state. However cancer stem cell shows the different behavior than the normal stem cell. It diverges from steady state and tumor size grow expoenetially. In future work, we can compare our mathematical model with experimental data from normal stem cell. 
