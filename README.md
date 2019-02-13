@@ -59,7 +59,7 @@ When d1 < v1 + r1, system diverges from steady state (0,0). Which means populati
       Non trivial steady state is stable. Both numerical solution and stochastic solution verified.   
       Red label = stem cell, Blue label = differentiated cell
       
-##### _Case 2: |(1-d0)(v1-d1)| > 8(1+d0) with steady state: (9.25,0.83)_
+##### _Case 2: |(1-d0)(v1-d1)| > 8(1+d0) with steady state: (9.9091,0.8182)_
 ![ii.case2.ODE](https://blogfiles.pstatic.net/MjAxODEyMDVfMzMg/MDAxNTQ0MDA1MjgzMDU1.erRwSEUFJFPD3JBb4DsA4em_6vZhNdb_FED1LBBJo00g.h9ln6xYgkl78G2XFzJF5fEfp7V61R_qNekGP0L_j6gAg.JPEG.nayeonkim93/ii.case2.ODE.jpeg)
 ![ii.case2.SSA](https://blogfiles.pstatic.net/MjAxODEyMDVfNjQg/MDAxNTQ0MDA1Mjg3ODU0.uydAxRS-M6yj1w3AvpXuwLdyIMvEUJWOYtey0X_Qorog.fbeGqyvVhohGNGrHuoTA_imKMN4lHt_VnZQaWkI2UCIg.JPEG.nayeonkim93/ii.case2.SSA.jpeg)
 
